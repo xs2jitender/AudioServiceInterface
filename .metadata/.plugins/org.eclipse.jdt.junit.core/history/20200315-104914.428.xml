@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="AudioServiceInterface" tests="9" started="9" failures="0" errors="2" ignored="1">
+  <testsuite name="TestRunner.TestRunner" time="16.979">
+    <testsuite name="Feature: As a user, I want to add inputs by clicking on the input source link on the left panel of the dashboard page" time="2.131">
+      <testsuite name="Scenario: debug" time="0.037" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.InputsStepsPage.addInput(InputsStepsPage.java:41)&#13;
+	at StepDefinitions.InputsSteps.i_click_on_new_source_tab(InputsSteps.java:61)&#13;
+	at ✽.When I click on new source tab(Inputs.feature:13)&#13;
+&#13;
+</error>
+        <testcase name="Given I am on the dashbaord page" classname="Scenario: debug" time="0.019"/>
+        <testcase name="And I click on the main panel of the dashboard page" classname="Scenario: debug" time="0.008"/>
+        <testcase name="When I click on new source tab" classname="Scenario: debug" time="0.009">
+          <error>java.lang.NullPointerException&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)&#13;
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)&#13;
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.InputsStepsPage.addInput(InputsStepsPage.java:41)&#13;
+	at StepDefinitions.InputsSteps.i_click_on_new_source_tab(InputsSteps.java:61)&#13;
+	at ✽.When I click on new source tab(Inputs.feature:13)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then the dropdowm menu should be displayed" classname="Scenario: debug" time="2.071" ignored="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: As a user, I want to log into ASI software" time="3.911">
+      <testsuite name="Scenario Outline: Successful login using valid account" time="3.911">
+        <testsuite name="Examples:" time="3.911">
+          <testsuite name="| admin | admin |" time="3.911">
+            <testcase name="Given I am on the login page" classname="| admin | admin |" time="0.394"/>
+            <testcase name="When I type in username admin" classname="| admin | admin |" time="0.35"/>
+            <testcase name="And I type password as admin" classname="| admin | admin |" time="0.962"/>
+            <testcase name="And click on login button" classname="| admin | admin |" time="0.162"/>
+            <testcase name="Then I successfully login and land on homepage displaying Dashboard page" classname="| admin | admin |" time="2.043"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

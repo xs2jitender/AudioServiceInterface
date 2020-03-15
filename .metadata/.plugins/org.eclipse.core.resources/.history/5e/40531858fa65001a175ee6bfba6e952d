@@ -1,0 +1,113 @@
+package PageObjects;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Utilities.BaseClass;
+
+public class InputsStepsPage extends BaseClass{
+	
+
+	public InputsStepsPage(WebDriver driver, WebDriverWait wait, Object selectfromdropdown) {
+		super(driver, wait);
+		
+		// TODO Auto-generated constructor stub
+	}
+
+	@FindBy(xpath = "//a[@href='/inputs'] ")
+    @CacheLookup
+    private WebElement clickoninput;
+
+    @FindBy(xpath = "//button[@id='btn_add_source']")
+    @CacheLookup
+    private WebElement clickonNewSourcebutton;
+
+
+	//public Object fillusernameData;
+
+    
+
+    public void addInput() {
+
+        WaitUntilElementVisible(clickoninput);
+        clickoninput.isDisplayed();
+        WaitUntilElementVisible(clickonNewSourcebutton);
+        clickonNewSourcebutton.isDisplayed();
+        
+        
+    }
+    
+    @FindBy(xpath = " //input[@id='ns_source_name']")
+    @CacheLookup
+    private WebElement addFriendlyName;
+    
+    public void addFriendlyName() {
+
+        WaitUntilElementVisible(addFriendlyName);
+        addFriendlyName.isDisplayed();
+       
+    }
+    
+    
+    @FindBy(xpath = "//select[@id='ns_source_type']")
+    @CacheLookup
+    private WebElement selectSourceType;
+    
+    public void selectSourceType(WebElement element, Select selectfromdropdown, String value) {
+    	
+    	WaitUntilElementVisible(selectSourceType);
+    	selectSourceType.isDisplayed();
+    	selectSourceType.click();
+    	selectfromdropdown.selectByValue(value);
+    		    
+    		
+
+ //   		Select oSelect = new Select(selectSourceType);
+//    		List <WebElement> elementCount = oSelect.getOptions();
+//    		int iSize = elementCount.size();
+//
+//    		for(int i =0; i<iSize ; i++){
+//    			String sValue = elementCount.get(i).getText();
+    	
+    }
+    
+    @FindBy(xpath = "//button[@id='btn_create_source']")
+    @CacheLookup
+    private WebElement clickonSaveButton;
+
+    public void clickOnSaveButton() {
+
+        WaitUntilElementVisible(clickonSaveButton);
+        clickonSaveButton.isEnabled();
+        clickonSaveButton.click();
+    }
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+	}
+    
+    
+    
+	
+       
+    
+
+

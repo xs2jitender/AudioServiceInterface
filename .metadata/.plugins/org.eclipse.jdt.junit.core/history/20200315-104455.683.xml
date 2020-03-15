@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="AudioServiceInterface" tests="9" started="9" failures="0" errors="4" ignored="6">
+  <testsuite name="TestRunner.TestRunner" time="14.009">
+    <testsuite name="Feature: As a user, I want to add inputs by clicking on the input source link on the left panel of the dashboard page" time="1.178">
+      <testsuite name="Scenario: debug" time="0.009" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.LoginStepsPage.fillusernameData(LoginStepsPage.java:38)&#13;
+	at StepDefinitions.LoginSteps.i_type_in_username(LoginSteps.java:43)&#13;
+	at StepDefinitions.InputsSteps.i_am_on_the_dashbaord_page(InputsSteps.java:36)&#13;
+	at ✽.Given I am on the dashbaord page(Inputs.feature:11)&#13;
+&#13;
+</error>
+        <testcase name="Given I am on the dashbaord page" classname="Scenario: debug" time="0.009">
+          <error>java.lang.NullPointerException&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.LoginStepsPage.fillusernameData(LoginStepsPage.java:38)&#13;
+	at StepDefinitions.LoginSteps.i_type_in_username(LoginSteps.java:43)&#13;
+	at StepDefinitions.InputsSteps.i_am_on_the_dashbaord_page(InputsSteps.java:36)&#13;
+	at ✽.Given I am on the dashbaord page(Inputs.feature:11)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And I click on the main panel of the dashboard page" classname="Scenario: debug" time="0.007" ignored="true"/>
+        <testcase name="When I click on new source tab" classname="Scenario: debug" time="0.005" ignored="true"/>
+        <testcase name="Then the dropdowm menu should be displayed" classname="Scenario: debug" time="1.137" ignored="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: As a user, I want to log into ASI software" time="1.888">
+      <testsuite name="Scenario Outline: Successful login using valid account" time="1.888">
+        <testsuite name="Examples:" time="1.888">
+          <testsuite name="| admin | admin |" time="0.01" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.LoginStepsPage.fillusernameData(LoginStepsPage.java:38)&#13;
+	at StepDefinitions.LoginSteps.i_type_in_username(LoginSteps.java:43)&#13;
+	at ✽.When I type in username admin(Login.feature:6)&#13;
+&#13;
+</error>
+            <testcase name="Given I am on the login page" classname="| admin | admin |" time="0.01"/>
+            <testcase name="When I type in username admin" classname="| admin | admin |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at Utilities.BaseClass.WaitUntilElementVisible(BaseClass.java:24)&#13;
+	at PageObjects.LoginStepsPage.fillusernameData(LoginStepsPage.java:38)&#13;
+	at StepDefinitions.LoginSteps.i_type_in_username(LoginSteps.java:43)&#13;
+	at ✽.When I type in username admin(Login.feature:6)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And I type password as admin" classname="| admin | admin |" time="0.004" ignored="true"/>
+            <testcase name="And click on login button" classname="| admin | admin |" time="0.009" ignored="true"/>
+            <testcase name="Then I successfully login and land on homepage displaying Dashboard page" classname="| admin | admin |" time="1.858" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

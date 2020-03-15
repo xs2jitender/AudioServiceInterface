@@ -1,0 +1,40 @@
+package PageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Utilities.BaseClass;
+
+public class InputsaddedPage extends BaseClass{
+	
+	private static final WebDriverWait WebDriverWait = null;
+	private static final WebDriver WebDriver = null;
+
+	public InputsaddedPage(WebDriver driver, WebDriverWait wait) {
+		super(driver, wait);
+		
+	}
+
+	public LoginPage loginpage = new LoginPage(WebDriver, WebDriverWait);
+	
+	
+    void fillusernameData() {
+	}
+    void fillPasswordData() {
+	}
+    
+    
+    
+	
+       
+    
+
+	/*@FindBy(xpath = "//input[@id='username']")
+    @CacheLookup
+    private WebElement usernameField;*/
+
+}

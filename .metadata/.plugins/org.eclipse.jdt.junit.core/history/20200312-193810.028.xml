@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="AudioServiceInterface" tests="8" started="8" failures="0" errors="0" ignored="3">
+  <testsuite name="TestRunner.TestRunner" time="17.796">
+    <testsuite name="Feature: As a user, I want to add inputs by clicking on the input source link on the left panle of the dashboard page" time="0.672">
+      <testsuite name="Scenario: Successfully adding logins" time="0.672" incomplete="true">
+        <skipped/>
+        <testcase name="Given I am on the dashbaord page" classname="Scenario: Successfully adding logins" time="0.0" ignored="true"/>
+        <testcase name="When I click on the input link on the left panel" classname="Scenario: Successfully adding logins" time="0.0" ignored="true"/>
+        <testcase name="Then I should be seeing the sources link on the main panel to add inputs" classname="Scenario: Successfully adding logins" time="0.672" ignored="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: As a user, I want to log into ASI software" time="5.629">
+      <testsuite name="Scenario Outline: Successful login using valid account" time="5.629">
+        <testsuite name="Examples:" time="5.629">
+          <testsuite name="| admin | admin |" time="5.629">
+            <testcase name="Given I am on the login page" classname="| admin | admin |" time="1.008"/>
+            <testcase name="When I type in username admin" classname="| admin | admin |" time="0.884"/>
+            <testcase name="And I type password as admin" classname="| admin | admin |" time="0.825"/>
+            <testcase name="And click on login button" classname="| admin | admin |" time="1.03"/>
+            <testcase name="Then I successfully login and land on homepage displaying Dashboard page" classname="| admin | admin |" time="1.881"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

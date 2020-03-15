@@ -1,0 +1,3 @@
+url = https://192.168.1.146:4443
+timeout = 100
+reportConfigPath=C:\\Users\\factum\\Desktop\\AudioServiceInterface\\AudioServiceInterface\\config.properties\\extent-config.xml
