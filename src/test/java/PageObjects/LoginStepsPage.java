@@ -14,6 +14,10 @@ import static org.junit.Assert.assertTrue;
 
 public class LoginStepsPage extends BaseClass {
 
+    public LoginStepsPage() {
+        PageFactory.initElements(getWebDriver(), this);
+    }
+
     @FindBy(xpath = "//input[@id='username']")
     @CacheLookup
     private WebElement userNameField;
